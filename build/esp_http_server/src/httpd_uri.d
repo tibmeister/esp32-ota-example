@@ -7,6 +7,7 @@ src/httpd_uri.o: \
  /home/jody/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/nghttp/port/include/http_parser.h \
  /home/jody/esp/esp-idf/components/esp_http_server/include/esp_http_server.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -34,7 +35,7 @@ src/httpd_uri.o: \
  /home/jody/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/jody/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -96,6 +97,8 @@ src/httpd_uri.o: \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
 /home/jody/esp/esp-idf/components/nghttp/port/include/http_parser.h:
 
 /home/jody/esp/esp-idf/components/esp_http_server/include/esp_http_server.h:
@@ -150,7 +153,7 @@ src/httpd_uri.o: \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 

@@ -4,6 +4,7 @@ apps/ping/esp_ping.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
  /home/jody/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
@@ -24,7 +25,7 @@ apps/ping/esp_ping.o: \
  /home/jody/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
  /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/sntp.h \
@@ -70,6 +71,8 @@ apps/ping/esp_ping.o: \
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
 
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
@@ -110,7 +113,7 @@ apps/ping/esp_ping.o: \
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

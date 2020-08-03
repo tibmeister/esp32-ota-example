@@ -26,7 +26,8 @@ libcoap/src/net.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/sntp.h \
@@ -76,10 +77,13 @@ libcoap/src/net.o: \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
- /home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h \
- /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/../../../lwip/src/include/lwip/inet.h \
- /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h \
+ /home/jody/esp/esp-idf/components/newlib/platform_include/net/if.h \
+ /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h \
  /home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h \
+ /home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h \
+ /home/jody/esp/esp-idf/components/lwip/port/esp32/include/netdb.h \
+ /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h \
+ /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/utlist.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_debug.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/pdu.h \
@@ -93,12 +97,12 @@ libcoap/src/net.o: \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/address.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_dtls.h \
- /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_session.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_time.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_event.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/option.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/bits.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/prng.h \
+ /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_session.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/resource.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/uthash.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/async.h \
@@ -108,7 +112,9 @@ libcoap/src/net.o: \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/option.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/encode.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/block.h \
- /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/net.h
+ /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/net.h \
+ /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_mutex.h \
+ /home/jody/esp/esp-idf/components/newlib/platform_include/pthread.h
 
 /home/jody/esp/esp-idf/components/coap/port/include/coap_config.h:
 
@@ -162,7 +168,9 @@ libcoap/src/net.o: \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
@@ -262,13 +270,19 @@ libcoap/src/net.o: \
 
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
 
-/home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h:
+/home/jody/esp/esp-idf/components/newlib/platform_include/net/if.h:
 
-/home/jody/esp/esp-idf/components/lwip/include/apps/sntp/../../../lwip/src/include/lwip/inet.h:
-
-/home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h:
+/home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h:
 
 /home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h:
+
+/home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h:
+
+/home/jody/esp/esp-idf/components/lwip/port/esp32/include/netdb.h:
+
+/home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h:
+
+/home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/utlist.h:
 
@@ -296,8 +310,6 @@ libcoap/src/net.o: \
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_dtls.h:
 
-/home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_session.h:
-
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_time.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_event.h:
@@ -307,6 +319,8 @@ libcoap/src/net.o: \
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/bits.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/prng.h:
+
+/home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_session.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/resource.h:
 
@@ -327,4 +341,8 @@ libcoap/src/net.o: \
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/block.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/net.h:
+
+/home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/coap_mutex.h:
+
+/home/jody/esp/esp-idf/components/newlib/platform_include/pthread.h:
 /home/jody/esp/esp-idf/components/coap/libcoap/src/net.c:

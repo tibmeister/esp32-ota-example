@@ -2,11 +2,14 @@ src/nvs_api.o: \
  /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_api.cpp \
  /home/jody/esp/esp-idf/components/nvs_flash/src/nvs.hpp \
  /home/jody/esp/esp-idf/components/nvs_flash/include/nvs.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_types.hpp \
+ /home/jody/esp/esp-idf/components/nvs_flash/include/nvs_handle.hpp \
+ /home/jody/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/jody/esp/esp-idf/components/nvs_flash/src/compressed_enum_table.hpp \
  /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_page.hpp \
  /home/jody/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -15,7 +18,6 @@ src/nvs_api.o: \
  /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_pagemanager.hpp \
  /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_storage.hpp \
  /home/jody/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
- /home/jody/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/jody/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  /home/jody/esp/esp-idf/components/spi_flash/include/esp_flash.h \
  /home/jody/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
@@ -55,6 +57,8 @@ src/nvs_api.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_partition_manager.hpp \
+ /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_handle_simple.hpp \
  /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/crc.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log_internal.h
@@ -63,7 +67,7 @@ src/nvs_api.o: \
 
 /home/jody/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
 
@@ -71,7 +75,13 @@ src/nvs_api.o: \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
 /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_types.hpp:
+
+/home/jody/esp/esp-idf/components/nvs_flash/include/nvs_handle.hpp:
+
+/home/jody/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
 /home/jody/esp/esp-idf/components/nvs_flash/src/compressed_enum_table.hpp:
 
@@ -88,8 +98,6 @@ src/nvs_api.o: \
 /home/jody/esp/esp-idf/components/nvs_flash/src/nvs_storage.hpp:
 
 /home/jody/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
-
-/home/jody/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
 /home/jody/esp/esp-idf/components/spi_flash/include/esp_partition.h:
 
@@ -168,6 +176,10 @@ src/nvs_api.o: \
 /home/jody/esp/esp-idf/components/freertos/include/freertos/semphr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/home/jody/esp/esp-idf/components/nvs_flash/src/nvs_partition_manager.hpp:
+
+/home/jody/esp/esp-idf/components/nvs_flash/src/nvs_handle_simple.hpp:
 
 /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/crc.h:
 

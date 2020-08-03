@@ -1,5 +1,5 @@
 locks.o: /home/jody/esp/esp-idf/components/newlib/locks.c \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/jody/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
@@ -9,6 +9,7 @@ locks.o: /home/jody/esp/esp-idf/components/newlib/locks.c \
  /home/jody/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/jody/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/jody/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
@@ -40,7 +41,7 @@ locks.o: /home/jody/esp/esp-idf/components/newlib/locks.c \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portable.h
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
 
@@ -59,6 +60,8 @@ locks.o: /home/jody/esp/esp-idf/components/newlib/locks.c \
 /home/jody/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

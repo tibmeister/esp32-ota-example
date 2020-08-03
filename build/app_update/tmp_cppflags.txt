@@ -1,1 +1,1 @@
-ff2ef6a-dirty esp32-ota-example v4.0.1-dirty
+ota-latest-dirty esp32-ota-example v4.1-rc

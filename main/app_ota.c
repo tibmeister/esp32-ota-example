@@ -14,12 +14,12 @@
 #include "esp_wifi.h"
 
 static const char *TAG = "ota";
+
 // server certificates
+extern const char ca_cert_pem_start[] asm("_binary_ca_pem_start");
+extern const char ca_cert_pem_end[] asm("_binary_ca_pem_end");
 
-extern const char server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
-extern const char server_cert_pem_end[] asm("_binary_ca_cert_pem_end");
-
-#define OTA_URL_SIZE 512
+#define OTA_URL_SIZE 1024
 
 static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
 {
@@ -58,7 +58,7 @@ void ota_task(void *pvParameter)
         esp_http_client_config_t config = {
             .url = CONFIG_FIRMWARE_UPGRADE_URL,
             .timeout_ms = CONFIG_OTA_RECV_TIMEOUT,
-            //.cert_pem = (char *)server_cert_pem_start,
+            .cert_pem = (char *)ca_cert_pem_start,
         };
 
 #ifdef CONFIG_FIRMWARE_UPGRADE_URL_FROM_STDIN

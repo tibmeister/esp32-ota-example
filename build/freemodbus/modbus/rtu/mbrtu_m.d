@@ -2,6 +2,7 @@ modbus/rtu/mbrtu_m.o: \
  /home/jody/esp/esp-idf/components/freemodbus/modbus/rtu/mbrtu_m.c \
  /home/jody/esp/esp-idf/components/freemodbus/port/port.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -30,7 +31,7 @@ modbus/rtu/mbrtu_m.o: \
  /home/jody/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/jody/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -52,6 +53,8 @@ modbus/rtu/mbrtu_m.o: \
 /home/jody/esp/esp-idf/components/freemodbus/port/port.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
@@ -109,7 +112,7 @@ modbus/rtu/mbrtu_m.o: \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 

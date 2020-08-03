@@ -1,13 +1,14 @@
 src/eap_peer/eap_mschapv2.o: \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h \
- /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
+ /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/common.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/port/include/os.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/port/include/endian.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
@@ -44,9 +45,9 @@ src/eap_peer/eap_mschapv2.o: \
 
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h:
 
-/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
-
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
+
+/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/common.h:
 
@@ -57,6 +58,8 @@ src/eap_peer/eap_mschapv2.o: \
 /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

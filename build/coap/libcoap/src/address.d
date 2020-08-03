@@ -26,7 +26,8 @@ libcoap/src/address.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/sntp.h \
@@ -76,11 +77,12 @@ libcoap/src/address.o: \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /home/jody/esp/esp-idf/components/newlib/platform_include/net/if.h \
+ /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h \
  /home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h \
- /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/../../../lwip/src/include/lwip/inet.h \
+ /home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h \
  /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/address.h \
- /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h \
- /home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h
+ /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h
 
 /home/jody/esp/esp-idf/components/coap/port/include/coap_config.h:
 
@@ -134,7 +136,9 @@ libcoap/src/address.o: \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
@@ -234,13 +238,15 @@ libcoap/src/address.o: \
 
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
 
+/home/jody/esp/esp-idf/components/newlib/platform_include/net/if.h:
+
+/home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h:
+
 /home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h:
 
-/home/jody/esp/esp-idf/components/lwip/include/apps/sntp/../../../lwip/src/include/lwip/inet.h:
+/home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/address.h:
 
 /home/jody/esp/esp-idf/components/coap/libcoap/include/coap2/libcoap.h:
-
-/home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h:
 /home/jody/esp/esp-idf/components/coap/libcoap/src/address.c:

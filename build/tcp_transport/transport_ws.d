@@ -8,12 +8,12 @@ transport_ws.o: \
  /home/jody/esp/esp-idf/components/tcp_transport/include/esp_transport.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/tcp_transport/include/esp_transport_tcp.h \
  /home/jody/esp/esp-idf/components/tcp_transport/include/esp_transport.h \
  /home/jody/esp/esp-idf/components/tcp_transport/include/esp_transport_ws.h \
  /home/jody/esp/esp-idf/components/tcp_transport/private_include/esp_transport_utils.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/sys/time.h \
- /home/jody/esp/esp-idf/components/tcp_transport/transport_strcasestr.h \
  /home/jody/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h \
  /home/jody/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /home/jody/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
@@ -39,6 +39,8 @@ transport_ws.o: \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
 /home/jody/esp/esp-idf/components/tcp_transport/include/esp_transport_tcp.h:
 
 /home/jody/esp/esp-idf/components/tcp_transport/include/esp_transport.h:
@@ -48,8 +50,6 @@ transport_ws.o: \
 /home/jody/esp/esp-idf/components/tcp_transport/private_include/esp_transport_utils.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/sys/time.h:
-
-/home/jody/esp/esp-idf/components/tcp_transport/transport_strcasestr.h:
 
 /home/jody/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h:
 

@@ -1,6 +1,7 @@
 periph_ctrl.o: /home/jody/esp/esp-idf/components/driver/periph_ctrl.c \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -29,7 +30,7 @@ periph_ctrl.o: /home/jody/esp/esp-idf/components/driver/periph_ctrl.c \
  /home/jody/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/jody/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -43,12 +44,15 @@ periph_ctrl.o: /home/jody/esp/esp-idf/components/driver/periph_ctrl.c \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/syscon_reg.h \
  /home/jody/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
@@ -106,7 +110,7 @@ periph_ctrl.o: /home/jody/esp/esp-idf/components/driver/periph_ctrl.c \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 
@@ -133,6 +137,8 @@ periph_ctrl.o: /home/jody/esp/esp-idf/components/driver/periph_ctrl.c \
 /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/syscon_reg.h:
 
 /home/jody/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
 

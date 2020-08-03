@@ -23,7 +23,8 @@ esp_tls.o: /home/jody/esp/esp-idf/components/esp-tls/esp_tls.c \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/sntp.h \
@@ -115,6 +116,8 @@ esp_tls.o: /home/jody/esp/esp-idf/components/esp-tls/esp_tls.c \
  /home/jody/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
  /home/jody/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/certs.h \
  /home/jody/esp/esp-idf/components/esp-tls/private_include/esp_tls_error_capture_internal.h \
+ /home/jody/esp/esp-idf/components/esp-tls/private_include/esp_tls_mbedtls.h \
+ /home/jody/esp/esp-idf/components/esp-tls/esp_tls.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log_internal.h
 
@@ -166,7 +169,9 @@ esp_tls.o: /home/jody/esp/esp-idf/components/esp-tls/esp_tls.c \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
@@ -349,6 +354,10 @@ esp_tls.o: /home/jody/esp/esp-idf/components/esp-tls/esp_tls.c \
 /home/jody/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/certs.h:
 
 /home/jody/esp/esp-idf/components/esp-tls/private_include/esp_tls_error_capture_internal.h:
+
+/home/jody/esp/esp-idf/components/esp-tls/private_include/esp_tls_mbedtls.h:
+
+/home/jody/esp/esp-idf/components/esp-tls/esp_tls.h:
 
 /home/jody/esp/esp-idf/components/log/include/esp_log.h:
 

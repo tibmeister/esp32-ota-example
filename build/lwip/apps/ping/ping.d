@@ -21,7 +21,8 @@ apps/ping/ping.o: /home/jody/esp/esp-idf/components/lwip/apps/ping/ping.c \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/sntp.h \
@@ -87,6 +88,7 @@ apps/ping/ping.o: /home/jody/esp/esp-idf/components/lwip/apps/ping/ping.c \
  /home/jody/esp/esp-idf/components/newlib/platform_include/sys/poll.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /home/jody/esp/esp-idf/components/lwip/include/apps/ping/ping_sock.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/esp_ping.h
 
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
@@ -133,7 +135,9 @@ apps/ping/ping.o: /home/jody/esp/esp-idf/components/lwip/apps/ping/ping.c \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
@@ -264,6 +268,8 @@ apps/ping/ping.o: /home/jody/esp/esp-idf/components/lwip/apps/ping/ping.c \
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
 
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
+
+/home/jody/esp/esp-idf/components/lwip/include/apps/ping/ping_sock.h:
 
 /home/jody/esp/esp-idf/components/lwip/include/apps/esp_ping.h:
 /home/jody/esp/esp-idf/components/lwip/apps/ping/ping.c:

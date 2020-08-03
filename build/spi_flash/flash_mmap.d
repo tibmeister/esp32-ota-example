@@ -1,6 +1,7 @@
 flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -28,7 +29,7 @@ flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
  /home/jody/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/jody/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -37,16 +38,13 @@ flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/spi_flash.h \
- /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/cache.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/jody/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_ipc.h \
  /home/jody/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -56,11 +54,16 @@ flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
  /home/jody/esp/esp-idf/components/log/include/esp_log.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/jody/esp/esp-idf/components/spi_flash/cache_utils.h \
+ /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/spi_flash.h \
+ /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/cache.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/jody/esp/esp-idf/components/esp32/include/esp32/spiram.h
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -116,7 +119,7 @@ flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 
@@ -134,25 +137,19 @@ flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/spi_flash.h:
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/cache.h:
+/home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
 
 /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h:
 
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h:
-
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
 
 /home/jody/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h:
 
@@ -171,6 +168,12 @@ flash_mmap.o: /home/jody/esp/esp-idf/components/spi_flash/flash_mmap.c \
 /home/jody/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 /home/jody/esp/esp-idf/components/spi_flash/cache_utils.h:
+
+/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/spi_flash.h:
+
+/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/cache.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
 
 /home/jody/esp/esp-idf/components/esp32/include/esp32/spiram.h:
 /home/jody/esp/esp-idf/components/spi_flash/./flash_mmap.c:

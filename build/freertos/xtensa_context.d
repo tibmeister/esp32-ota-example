@@ -19,7 +19,8 @@ xtensa_context.o: \
  /home/jody/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_timer.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_rtos.h \
- /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h
+ /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
+ /home/jody/esp/esp-idf/components/freertos/xt_asm_utils.h
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_rtos.h:
 
@@ -60,4 +61,6 @@ xtensa_context.o: \
 /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_rtos.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
+
+/home/jody/esp/esp-idf/components/freertos/xt_asm_utils.h:
 /home/jody/esp/esp-idf/components/freertos/./xtensa_context.S:

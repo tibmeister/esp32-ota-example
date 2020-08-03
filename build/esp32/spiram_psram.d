@@ -1,8 +1,9 @@
 spiram_psram.o: /home/jody/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log.h \
  /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -45,12 +46,14 @@ spiram_psram.o: /home/jody/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/jody/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
  /home/jody/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_caps.h \
+ /home/jody/esp/esp-idf/components/soc/include/hal/gpio_types.h \
  /home/jody/esp/esp-idf/components/driver/include/driver/spi_common_internal.h \
  /home/jody/esp/esp-idf/components/driver/include/driver/spi_common.h \
+ /home/jody/esp/esp-idf/components/soc/include/soc/lldesc.h \
  /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/jody/esp/esp-idf/components/soc/include/hal/spi_types.h \
  /home/jody/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
@@ -58,21 +61,27 @@ spiram_psram.o: /home/jody/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/jody/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/jody/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/jody/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
+ /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
+ /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/jody/esp/esp-idf/components/soc/include/soc/rtc_periph.h \
+ /home/jody/esp/esp-idf/components/soc/include/soc/rtc_io_periph.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_caps.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_struct.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h:
 
@@ -158,17 +167,21 @@ spiram_psram.o: /home/jody/esp/esp-idf/components/esp32/spiram_psram.c \
 
 /home/jody/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
-
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
 
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_caps.h:
+
+/home/jody/esp/esp-idf/components/soc/include/hal/gpio_types.h:
+
 /home/jody/esp/esp-idf/components/driver/include/driver/spi_common_internal.h:
 
 /home/jody/esp/esp-idf/components/driver/include/driver/spi_common.h:
+
+/home/jody/esp/esp-idf/components/soc/include/soc/lldesc.h:
 
 /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
 
@@ -184,17 +197,25 @@ spiram_psram.o: /home/jody/esp/esp-idf/components/esp32/spiram_psram.c \
 
 /home/jody/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
+/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h:
+
+/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
+
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
 /home/jody/esp/esp-idf/components/soc/include/soc/rtc_periph.h:
+
+/home/jody/esp/esp-idf/components/soc/include/soc/rtc_io_periph.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_caps.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_struct.h:
 
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
-
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h:
 /home/jody/esp/esp-idf/components/esp32/./spiram_psram.c:

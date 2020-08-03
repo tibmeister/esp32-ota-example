@@ -7,6 +7,7 @@ src/transports/protocomm_console.o: \
  /home/jody/esp/esp-idf/components/console/esp_console.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -32,7 +33,7 @@ src/transports/protocomm_console.o: \
  /home/jody/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/jody/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -41,21 +42,13 @@ src/transports/protocomm_console.o: \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/jody/esp/esp-idf/components/driver/include/driver/uart.h \
- /home/jody/esp/esp-idf/components/soc/include/soc/uart_periph.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
  /home/jody/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
- /home/jody/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/jody/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
- /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/jody/esp/esp-idf/components/soc/include/hal/uart_types.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/jody/esp/esp-idf/components/protocomm/include/common/protocomm.h \
  /home/jody/esp/esp-idf/components/protocomm/include/security/protocomm_security.h \
  /home/jody/esp/esp-idf/components/protocomm/include/transports/protocomm_console.h \
@@ -74,6 +67,8 @@ src/transports/protocomm_console.o: \
 /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -125,7 +120,7 @@ src/transports/protocomm_console.o: \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 
@@ -143,27 +138,9 @@ src/transports/protocomm_console.o: \
 
 /home/jody/esp/esp-idf/components/driver/include/driver/uart.h:
 
-/home/jody/esp/esp-idf/components/soc/include/soc/uart_periph.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
-
 /home/jody/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
-/home/jody/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/semphr.h:
 
@@ -171,7 +148,9 @@ src/transports/protocomm_console.o: \
 
 /home/jody/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
-/home/jody/esp/esp-idf/components/esp_common/include/esp_types.h:
+/home/jody/esp/esp-idf/components/soc/include/hal/uart_types.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/jody/esp/esp-idf/components/protocomm/include/common/protocomm.h:
 

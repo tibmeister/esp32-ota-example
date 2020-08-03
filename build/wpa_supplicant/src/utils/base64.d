@@ -8,6 +8,7 @@ src/utils/base64.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/base64.h
 
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h:
@@ -25,6 +26,8 @@ src/utils/base64.o: \
 /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/base64.h:
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/base64.c:

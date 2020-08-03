@@ -7,6 +7,7 @@ SPI_Flash.o: \
  /home/jody/esp/esp-idf/components/wear_levelling/private_include/SPI_Flash.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h \
  /home/jody/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h
 
@@ -23,6 +24,8 @@ SPI_Flash.o: \
 /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h:
 

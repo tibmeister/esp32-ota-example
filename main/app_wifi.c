@@ -177,7 +177,8 @@ static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_
     else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP)
     {
         ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
-        settings.ip = event->ip_info.ip;
+        // TODO: Fix this as it fails build
+        //settings.ip = event->ip_info.ip;
         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&settings.ip));
         s_retry_num = 0;
         xEventGroupSetBits(event_group, WIFI_CONNECTED_BIT);

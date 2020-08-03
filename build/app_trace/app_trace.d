@@ -3,11 +3,12 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/jody/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -25,6 +26,7 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/xtensa/include/eri.h \
  /home/jody/esp/esp-idf/components/xtensa/include/xtensa-debug-module.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/jody/esp/esp-idf/components/soc/include/soc/timer_periph.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h \
@@ -37,7 +39,6 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
- /home/jody/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portmacro.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_private/crosscore_int.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_timer.h \
@@ -58,6 +59,8 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
 
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
@@ -66,7 +69,7 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp32/include/esp32/dport_access.h:
 
@@ -102,6 +105,8 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
 
 /home/jody/esp/esp-idf/components/xtensa/include/xtensa-debug-module.h:
 
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
+
 /home/jody/esp/esp-idf/components/soc/include/soc/timer_periph.h:
 
 /home/jody/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h:
@@ -125,8 +130,6 @@ app_trace.o: /home/jody/esp/esp-idf/components/app_trace/app_trace.c \
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portable.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h:
-
-/home/jody/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portmacro.h:
 

@@ -1,7 +1,7 @@
 src/hal/spi_hal.o: \
  /home/jody/esp/esp-idf/components/soc/src/hal/spi_hal.c \
  /home/jody/esp/esp-idf/components/soc/include/hal/spi_hal.h \
- /home/jody/esp/esp-idf/components/soc/include/hal/spi_ll.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/hal/spi_ll.h \
  /home/jody/esp/esp-idf/components/soc/include/hal/hal_defs.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
@@ -11,6 +11,7 @@ src/hal/spi_hal.o: \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
@@ -25,7 +26,7 @@ src/hal/spi_hal.o: \
 
 /home/jody/esp/esp-idf/components/soc/include/hal/spi_hal.h:
 
-/home/jody/esp/esp-idf/components/soc/include/hal/spi_ll.h:
+/home/jody/esp/esp-idf/components/soc/esp32/include/hal/spi_ll.h:
 
 /home/jody/esp/esp-idf/components/soc/include/hal/hal_defs.h:
 
@@ -44,6 +45,8 @@ src/hal/spi_hal.o: \
 /home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h:
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

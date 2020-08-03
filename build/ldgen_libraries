@@ -3,6 +3,7 @@
  /home/jody/esp/myprojects/esp32-ota-example/build/asio/libasio.a
  /home/jody/esp/myprojects/esp32-ota-example/build/bootloader_support/libbootloader_support.a
  /home/jody/esp/myprojects/esp32-ota-example/build/bt/libbt.a
+ /home/jody/esp/myprojects/esp32-ota-example/build/cbor/libcbor.a
  /home/jody/esp/myprojects/esp32-ota-example/build/coap/libcoap.a
  /home/jody/esp/myprojects/esp32-ota-example/build/console/libconsole.a
  /home/jody/esp/myprojects/esp32-ota-example/build/cxx/libcxx.a
@@ -19,8 +20,10 @@
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_http_server/libesp_http_server.a
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_https_ota/libesp_https_ota.a
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_local_ctrl/libesp_local_ctrl.a
+ /home/jody/esp/myprojects/esp32-ota-example/build/esp_netif/libesp_netif.a
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_ringbuf/libesp_ringbuf.a
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_rom/libesp_rom.a
+ /home/jody/esp/myprojects/esp32-ota-example/build/esp_serial_slave_link/libesp_serial_slave_link.a
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_websocket_client/libesp_websocket_client.a
  /home/jody/esp/myprojects/esp32-ota-example/build/esp_wifi/libesp_wifi.a
  /home/jody/esp/myprojects/esp32-ota-example/build/espcoredump/libespcoredump.a
@@ -43,6 +46,7 @@
  /home/jody/esp/myprojects/esp32-ota-example/build/nghttp/libnghttp.a
  /home/jody/esp/myprojects/esp32-ota-example/build/nvs_flash/libnvs_flash.a
  /home/jody/esp/myprojects/esp32-ota-example/build/openssl/libopenssl.a
+ /home/jody/esp/myprojects/esp32-ota-example/build/perfmon/libperfmon.a
  /home/jody/esp/myprojects/esp32-ota-example/build/protobuf-c/libprotobuf-c.a
  /home/jody/esp/myprojects/esp32-ota-example/build/protocomm/libprotocomm.a
  /home/jody/esp/myprojects/esp32-ota-example/build/pthread/libpthread.a

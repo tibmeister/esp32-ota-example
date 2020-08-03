@@ -4,6 +4,7 @@ src/esp_supplicant/esp_wpa3.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
  /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -51,7 +52,7 @@ src/esp_supplicant/esp_wpa3.o: \
  /home/jody/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/jody/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
@@ -63,7 +64,31 @@ src/esp_supplicant/esp_wpa3.o: \
  /home/jody/esp/esp-idf/components/esp_event/include/esp_event_base.h \
  /home/jody/esp/esp-idf/components/esp_event/include/esp_event_legacy.h \
  /home/jody/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
+ /home/jody/esp/esp-idf/components/esp_netif/include/esp_netif.h \
+ /home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h \
+ /home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_types.h \
+ /home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_defaults.h \
+ /home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_netif_glue.h \
+ /home/jody/esp/esp-idf/components/esp_eth/include/esp_eth.h \
+ /home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_com.h \
+ /home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_mac.h \
+ /home/jody/esp/esp-idf/components/driver/include/driver/spi_master.h \
+ /home/jody/esp/esp-idf/components/driver/include/driver/spi_common.h \
+ /home/jody/esp/esp-idf/components/soc/include/soc/lldesc.h \
+ /home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
+ /home/jody/esp/esp-idf/components/soc/include/soc/spi_periph.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
+ /home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /home/jody/esp/esp-idf/components/soc/include/hal/spi_types.h \
+ /home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_phy.h \
  /home/jody/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
+ /home/jody/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter_types.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
  /home/jody/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
@@ -86,9 +111,11 @@ src/esp_supplicant/esp_wpa3.o: \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
  /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_zone.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
+ /home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_sta_list.h \
  /home/jody/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h \
  /home/jody/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
  /home/jody/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
+ /home/jody/esp/esp-idf/components/esp_wifi/include/esp_wifi_default.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/common/defs.h \
  /home/jody/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.h \
@@ -101,6 +128,8 @@ src/esp_supplicant/esp_wpa3.o: \
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 /home/jody/esp/myprojects/esp32-ota-example/build/include/sdkconfig.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h:
 
@@ -196,7 +225,7 @@ src/esp_supplicant/esp_wpa3.o: \
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 
@@ -220,7 +249,55 @@ src/esp_supplicant/esp_wpa3.o: \
 
 /home/jody/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 
+/home/jody/esp/esp-idf/components/esp_netif/include/esp_netif.h:
+
+/home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:
+
+/home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_types.h:
+
+/home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_defaults.h:
+
+/home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_netif_glue.h:
+
+/home/jody/esp/esp-idf/components/esp_eth/include/esp_eth.h:
+
+/home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_com.h:
+
+/home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_mac.h:
+
+/home/jody/esp/esp-idf/components/driver/include/driver/spi_master.h:
+
+/home/jody/esp/esp-idf/components/driver/include/driver/spi_common.h:
+
+/home/jody/esp/esp-idf/components/soc/include/soc/lldesc.h:
+
+/home/jody/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
+
+/home/jody/esp/esp-idf/components/soc/include/soc/spi_periph.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/jody/esp/esp-idf/components/esp_common/include/esp_assert.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
+
+/home/jody/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
+
+/home/jody/esp/esp-idf/components/soc/include/hal/spi_types.h:
+
+/home/jody/esp/esp-idf/components/esp_eth/include/esp_eth_phy.h:
+
 /home/jody/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h:
+
+/home/jody/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter_types.h:
 
 /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 
@@ -266,11 +343,15 @@ src/esp_supplicant/esp_wpa3.o: \
 
 /home/jody/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
 
+/home/jody/esp/esp-idf/components/esp_netif/include/esp_netif_sta_list.h:
+
 /home/jody/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h:
 
 /home/jody/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
 
 /home/jody/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
+
+/home/jody/esp/esp-idf/components/esp_wifi/include/esp_wifi_default.h:
 
 /home/jody/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h:
 

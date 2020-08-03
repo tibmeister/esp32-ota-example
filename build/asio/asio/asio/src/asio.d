@@ -27,7 +27,8 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/jody/esp/esp-idf/components/esp32/include/esp_attr.h \
+ /home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/jody/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/sntp.h \
@@ -89,8 +90,8 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/newlib/platform_include/sys/un.h \
  /home/jody/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h \
  /home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h \
- /home/jody/esp/esp-idf/components/lwip/include/apps/sntp/../../../lwip/src/include/lwip/inet.h \
  /home/jody/esp/esp-idf/components/newlib/platform_include/net/if.h \
+ /home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h \
  /home/jody/esp/esp-idf/components/asio/port/include/esp_exception.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log.h \
  /home/jody/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -102,7 +103,6 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_type_requirements.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/async_result.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/type_traits.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/handler_type.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/scoped_ptr.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/service_registry.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/mutex.hpp \
@@ -116,9 +116,7 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/throw_exception.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/executor.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/atomic_count.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/executor_op.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/fenced_block.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/std_fenced_block.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/executor_function.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_alloc_helpers.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/recycling_allocator.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread_context.hpp \
@@ -128,15 +126,18 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread_info_base.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/associated_allocator.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/handler_alloc_hook.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/global.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_global.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/system_executor.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/system_executor.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/executor_op.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/fenced_block.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/std_fenced_block.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_invoke_helpers.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/handler_invoke_hook.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/scheduler_operation.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_tracking.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/op_queue.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/global.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_global.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/system_executor.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/system_executor.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/system_context.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/scheduler.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/conditionally_enabled_event.hpp \
@@ -146,9 +147,9 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/assert.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/null_event.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/reactor_fwd.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread_group.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_thread.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread_group.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/system_context.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/handler_alloc_hook.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/io_context.ipp \
@@ -165,6 +166,7 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/completion_handler.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_work.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/operation.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/non_const_lvalue.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/throw_error.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/concurrency_hint.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/limits.hpp \
@@ -192,8 +194,8 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/reactive_descriptor_service.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/buffer.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/array_fwd.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/is_buffer_sequence.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/string_view.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/is_buffer_sequence.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/buffer_sequence_adapter.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/descriptor_read_op.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/reactor_op.hpp \
@@ -227,13 +229,12 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/socket_holder.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/resolver_service_base.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/resolver_service_base.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/executor_work_guard.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/resolve_op.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/scheduler.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/scheduler_thread_info.hpp \
- /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/select_reactor.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/signal_blocker.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_signal_blocker.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/select_reactor.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/service_registry.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/signal_set_service.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/signal_set_service.hpp \
@@ -246,6 +247,7 @@ asio/asio/src/asio.o: \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/strand_executor_service.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/strand_executor_service.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/strand_executor_service.hpp \
+ /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/executor_work_guard.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/strand_service.ipp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/strand_service.hpp \
  /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/strand_service.hpp \
@@ -351,7 +353,9 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/jody/esp/esp-idf/components/esp32/include/esp_attr.h:
+/home/jody/esp/esp-idf/components/esp_common/include/esp_compiler.h:
+
+/home/jody/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
 /home/jody/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
@@ -475,9 +479,9 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h:
 
-/home/jody/esp/esp-idf/components/lwip/include/apps/sntp/../../../lwip/src/include/lwip/inet.h:
-
 /home/jody/esp/esp-idf/components/newlib/platform_include/net/if.h:
+
+/home/jody/esp/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h:
 
 /home/jody/esp/esp-idf/components/asio/port/include/esp_exception.h:
 
@@ -500,8 +504,6 @@ asio/asio/src/asio.o: \
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/async_result.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/type_traits.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/handler_type.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/scoped_ptr.hpp:
 
@@ -529,11 +531,7 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/atomic_count.hpp:
 
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/executor_op.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/fenced_block.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/std_fenced_block.hpp:
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/executor_function.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_alloc_helpers.hpp:
 
@@ -553,6 +551,20 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/handler_alloc_hook.hpp:
 
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/global.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_global.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/system_executor.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/system_executor.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/executor_op.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/fenced_block.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/std_fenced_block.hpp:
+
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_invoke_helpers.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/handler_invoke_hook.hpp:
@@ -562,14 +574,6 @@ asio/asio/src/asio.o: \
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_tracking.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/op_queue.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/global.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_global.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/system_executor.hpp:
-
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/system_executor.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/system_context.hpp:
 
@@ -589,11 +593,11 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/reactor_fwd.hpp:
 
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread_group.hpp:
-
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_thread.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/thread_group.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/impl/system_context.hpp:
 
@@ -626,6 +630,8 @@ asio/asio/src/asio.o: \
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/handler_work.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/operation.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/non_const_lvalue.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/throw_error.hpp:
 
@@ -681,9 +687,9 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/array_fwd.hpp:
 
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/is_buffer_sequence.hpp:
-
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/string_view.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/is_buffer_sequence.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/buffer_sequence_adapter.hpp:
 
@@ -751,19 +757,17 @@ asio/asio/src/asio.o: \
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/resolver_service_base.hpp:
 
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/executor_work_guard.hpp:
-
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/resolve_op.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/scheduler.ipp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/scheduler_thread_info.hpp:
 
-/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/select_reactor.ipp:
-
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/signal_blocker.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/posix_signal_blocker.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/select_reactor.ipp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/service_registry.ipp:
 
@@ -788,6 +792,8 @@ asio/asio/src/asio.o: \
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/strand_executor_service.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/strand_executor_service.hpp:
+
+/home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/executor_work_guard.hpp:
 
 /home/jody/esp/esp-idf/components/asio/asio/asio/include/asio/detail/impl/strand_service.ipp:
 
