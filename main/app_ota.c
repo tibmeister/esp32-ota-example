@@ -52,8 +52,8 @@ static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
 
 void ota_task(void *pvParameter)
 {
-    //Pause for 10 seconds to allow for everything to catch up
-    vTaskDelay(10000 / portTICK_PERIOD_MS);
+    //Pause for 5 seconds to allow for everything to catch up
+    vTaskDelay(5000 / portTICK_PERIOD_MS);
 
     while (1)
     {
@@ -127,7 +127,7 @@ void ota_task(void *pvParameter)
                 break;
             }
 
-            ESP_LOGD(TAG, "Image bytes read: %d", esp_https_ota_get_image_len_read(https_ota_handle));
+            ESP_LOGI(TAG, "Image bytes read: %d", esp_https_ota_get_image_len_read(https_ota_handle));
         }
 
         if (esp_https_ota_is_complete_data_received(https_ota_handle) != true)
@@ -161,7 +161,9 @@ void ota_task(void *pvParameter)
             //vTaskDelete(NULL);
         }
 
-        vTaskDelay(10000 / portTICK_PERIOD_MS);
+        // No update was found or needed, or there was some issue
+        // Wait for 30 seconds then try again
+        vTaskDelay(30000 / portTICK_PERIOD_MS);
     }
 }
 
