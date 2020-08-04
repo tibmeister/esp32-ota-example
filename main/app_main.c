@@ -2,7 +2,6 @@
 #include "freertos/event_groups.h"
 #include "esp_event.h"
 #include "esp_system.h"
-#include "esp_log.h"
 #include "tcpip_adapter.h"
 #include "nvs_flash.h"
 #include "sdkconfig.h"
@@ -13,6 +12,9 @@
 #include "esp_partition.h"
 #include "esp_ota_ops.h"
 #include "errno.h"
+
+#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
+#include "esp_log.h"
 
 #define HASH_LEN 32 /* SHA-256 digest length */
 
