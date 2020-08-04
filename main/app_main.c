@@ -9,7 +9,12 @@
 #include "app_settings.h"
 #include "app_wifi.h"
 #include "app_ota.h"
+#include "esp_flash_partitions.h"
+#include "esp_partition.h"
 #include "esp_ota_ops.h"
+#include "errno.h"
+
+#define HASH_LEN 32 /* SHA-256 digest length */
 
 static const char *TAG = "application_main";
 EventGroupHandle_t event_group;
