@@ -9,6 +9,7 @@
 #include "app_settings.h"
 #include "app_wifi.h"
 #include "app_ota.h"
+#include "esp_ota_ops.h"
 
 static const char *TAG = "application_main";
 EventGroupHandle_t event_group;
@@ -53,6 +54,45 @@ void heap_debug_task(void *pvParameter)
 
 void app_main()
 {
+  uint8_t sha_256[HASH_LEN] = { 0 };
+  esp_partition_t partition;
+
+  // get sha256 digest for the partition table
+  partition.address   = ESP_PARTITION_TABLE_OFFSET;
+  partition.size      = ESP_PARTITION_TABLE_MAX_LEN;
+  partition.type      = ESP_PARTITION_TYPE_DATA;
+  esp_partition_get_sha256(&partition, sha_256);
+  print_sha256(sha_256, "SHA-256 for the partition table: ");
+
+  // get sha256 digest for bootloader
+  partition.address   = ESP_BOOTLOADER_OFFSET;
+  partition.size      = ESP_PARTITION_TABLE_OFFSET;
+  partition.type      = ESP_PARTITION_TYPE_APP;
+  esp_partition_get_sha256(&partition, sha_256);
+  print_sha256(sha_256, "SHA-256 for bootloader: ");
+
+  // get sha256 digest for running partition
+  esp_partition_get_sha256(esp_ota_get_running_partition(), sha_256);
+  print_sha256(sha_256, "SHA-256 for current firmware: ");
+
+  // If we've gotten this far it's far to assume we are good to go
+  const esp_partition_t *running = esp_ota_get_running_partition();
+  esp_ota_img_states_t ota_state;
+
+  if (esp_ota_get_state_partition(running, &ota_state) == ESP_OK)
+  {
+    if(ota_state == ESP_OTA_IMG_PENDING_VERIFY)
+    {
+        ESP_LOGI(TAG, "Update was successful, switching to run this going forward");
+        esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
+    }
+    else
+    {
+        ESP_LOGE(TAG, "Update was not sucessful, rolling back the firmware and rebooting");
+        esp_err_t errRb = esp_ota_mark_app_invalid_rollback_and_reboot();
+    }
+  }
+
   EventBits_t uxBits;
 
   // xTaskCreate(&heap_debug_task,"heap_debug_task",2048,NULL,5,NULL);
@@ -75,5 +115,6 @@ void app_main()
       return;
     }
   }
+
   esp_register_shutdown_handler(&app_shutdown);
 }
