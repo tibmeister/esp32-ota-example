@@ -167,8 +167,8 @@ void ota_task(void *pvParameter)
         }
 
         // No update was found or needed, or there was some issue
-        // Wait for 30 seconds then try again
-        vTaskDelay(30000 / portTICK_PERIOD_MS);
+        // Wait for 15 seconds then try again
+        vTaskDelay(15000 / portTICK_PERIOD_MS);
     }
 }
 
