@@ -19,6 +19,16 @@
 static const char *TAG = "application_main";
 EventGroupHandle_t event_group;
 
+static void print_sha256 (const uint8_t *image_hash, const char *label)
+{
+    char hash_print[HASH_LEN * 2 + 1];
+    hash_print[HASH_LEN * 2] = 0;
+    for (int i = 0; i < HASH_LEN; ++i) {
+        sprintf(&hash_print[i * 2], "%02x", image_hash[i]);
+    }
+    ESP_LOGI(TAG, "%s: %s", label, hash_print);
+}
+
 void app_shutdown()
 {
   app_settings_shutdown();
