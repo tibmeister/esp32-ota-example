@@ -50,6 +50,7 @@ void ota_task(void *pvParameter)
 {
     //Pause for 10 seconds to allow for everything to catch up
     vTaskDelay(10000 / portTICK_PERIOD_MS);
+
     while (1)
     {
         ESP_LOGI(TAG, "Starting OTA update");
@@ -117,9 +118,7 @@ void ota_task(void *pvParameter)
             {
                 break;
             }
-            // esp_https_ota_perform returns after every read operation which gives user the ability to
-            // monitor the status of OTA upgrade by calling esp_https_ota_get_image_len_read, which gives length of image
-            // data read so far.
+
             ESP_LOGD(TAG, "Image bytes read: %d", esp_https_ota_get_image_len_read(https_ota_handle));
         }
 
@@ -131,6 +130,7 @@ void ota_task(void *pvParameter)
 
     ota_end:
         ota_finish_err = esp_https_ota_finish(https_ota_handle);
+
         if ((err == ESP_OK) && (ota_finish_err == ESP_OK))
         {
             ESP_LOGI(TAG, "OTA upgrade successful. Rebooting ...");
@@ -143,8 +143,9 @@ void ota_task(void *pvParameter)
             {
                 ESP_LOGE(TAG, "Image validation failed, image is corrupted");
             }
+
             ESP_LOGE(TAG, "OTA upgrade failed %d", ota_finish_err);
-            vTaskDelete(NULL);
+            //vTaskDelete(NULL);
         }
 
         vTaskDelay(10000 / portTICK_PERIOD_MS);
