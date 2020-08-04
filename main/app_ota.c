@@ -21,6 +21,8 @@ extern const char ca_cert_pem_end[] asm("_binary_ca_pem_end");
 
 #define OTA_URL_SIZE 1024
 
+bool bNeedUpdate = false;
+
 static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
 {
     if (new_app_info == NULL)
@@ -39,10 +41,12 @@ static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
     if (memcmp(new_app_info->version, running_app_info.version, sizeof(new_app_info->version)) == 0)
     {
         ESP_LOGW(TAG, "Current running version is the same as a new. We will not continue the update.");
+        bNeedUpdate = false;
+
         return ESP_FAIL;
     }
 #endif
-
+    bNeedUpdate = true;
     return ESP_OK;
 }
 
@@ -105,7 +109,7 @@ void ota_task(void *pvParameter)
             goto ota_end;
         }
         err = validate_image_header(&app_desc);
-        if (err != ESP_OK)
+        if (err != ESP_OK && !bNeedUpdate)
         {
             ESP_LOGE(TAG, "image header verification failed");
             goto ota_end;
@@ -144,7 +148,12 @@ void ota_task(void *pvParameter)
                 ESP_LOGE(TAG, "Image validation failed, image is corrupted");
             }
 
-            ESP_LOGE(TAG, "OTA upgrade failed %d", ota_finish_err);
+            if(bNeedUpdate)
+            {
+                ESP_LOGE(TAG, "OTA upgrade failed %d", ota_finish_err);
+            }
+
+            // TODO: decide if we still need to delete this in the future
             //vTaskDelete(NULL);
         }
 
