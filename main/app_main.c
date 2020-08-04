@@ -100,7 +100,6 @@ void app_main()
     {
         ESP_LOGI(TAG, "Update was successful, switching to run this going forward");
         esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
-        esp_restart();
     }
     else
     {
