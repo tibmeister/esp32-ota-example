@@ -113,7 +113,7 @@ void ota_task(void *pvParameter)
 
         err = validate_image_header(&app_desc);
 
-        if (err != ESP_OK && !bNeedUpdate)
+        if (err != ESP_OK && bNeedUpdate)
         {
             ESP_LOGE(TAG, "image header verification failed");
             goto ota_end;
