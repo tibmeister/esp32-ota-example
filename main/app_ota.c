@@ -119,7 +119,7 @@ void ota_task(void *pvParameter)
             goto ota_end;
         }
 
-        while (1)
+        while (bNeedUpdate)
         {
             err = esp_https_ota_perform(https_ota_handle);
             if (err != ESP_ERR_HTTPS_OTA_IN_PROGRESS)
