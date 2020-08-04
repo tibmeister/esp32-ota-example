@@ -102,13 +102,17 @@ void ota_task(void *pvParameter)
         }
 
         esp_app_desc_t app_desc;
+
         err = esp_https_ota_get_img_desc(https_ota_handle, &app_desc);
+
         if (err != ESP_OK)
         {
             ESP_LOGE(TAG, "esp_https_ota_read_img_desc failed");
             goto ota_end;
         }
+
         err = validate_image_header(&app_desc);
+
         if (err != ESP_OK && !bNeedUpdate)
         {
             ESP_LOGE(TAG, "image header verification failed");
@@ -164,6 +168,26 @@ void ota_task(void *pvParameter)
 void ota_init()
 {
     esp_err_t err = nvs_flash_init();
+
+    // TODO: Enable Rollback support
+    //## If we've gotten this far it's far to assume we are good to go
+    // const esp_partition_t *running = esp_ota_get_running_partition();
+    // esp_ota_img_states_t ota_state;
+
+    // if (esp_ota_get_state_partition(running, &ota_state) == ESP_OK)
+    // {
+    //     if(ota_state == ESP_OTA_IMG_PENDING_VERIFY)
+    //     {
+    //         ESP_LOGI(TAG, "Update was successful, switching to run this going forward");
+    //         esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
+    //     }
+    //     else
+    //     {
+    //         ESP_LOGE(TAG, "Update was not sucessful, rolling back the firmware and rebooting");
+    //         esp_err_t errRb = esp_ota_mark_app_invalid_rollback_and_reboot();
+    //     }
+    // }
+
     if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND)
     {
         // 1.OTA app partition table has a smaller NVS partition size than the non-OTA
@@ -173,6 +197,7 @@ void ota_init()
         ESP_ERROR_CHECK(nvs_flash_erase());
         err = nvs_flash_init();
     }
+
     ESP_ERROR_CHECK(err);
 
     esp_wifi_set_ps(WIFI_PS_NONE);
