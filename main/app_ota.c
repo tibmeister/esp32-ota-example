@@ -32,6 +32,7 @@ static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
 
     const esp_partition_t *running = esp_ota_get_running_partition();
     esp_app_desc_t running_app_info;
+
     if (esp_ota_get_partition_description(running, &running_app_info) == ESP_OK)
     {
         ESP_LOGI(TAG, "Running firmware version: %s", running_app_info.version);
@@ -46,6 +47,7 @@ static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
         return ESP_FAIL;
     }
 #endif
+
     bNeedUpdate = true;
     return ESP_OK;
 }
@@ -60,6 +62,7 @@ void ota_task(void *pvParameter)
         ESP_LOGI(TAG, "Starting OTA update");
 
         esp_err_t ota_finish_err = ESP_OK;
+
         esp_http_client_config_t config = {
             .url = CONFIG_FIRMWARE_UPGRADE_URL,
             .timeout_ms = CONFIG_OTA_RECV_TIMEOUT,
@@ -68,6 +71,7 @@ void ota_task(void *pvParameter)
 
 #ifdef CONFIG_FIRMWARE_UPGRADE_URL_FROM_STDIN
         char url_buf[OTA_URL_SIZE];
+
         if (strcmp(config.url, "FROM_STDIN") == 0)
         {
             example_configure_stdin_stdout();
@@ -126,6 +130,7 @@ void ota_task(void *pvParameter)
             while (1)
             {
                 err = esp_https_ota_perform(https_ota_handle);
+
                 if (err != ESP_ERR_HTTPS_OTA_IN_PROGRESS)
                 {
                     break;
