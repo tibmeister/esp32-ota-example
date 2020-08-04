@@ -147,7 +147,7 @@ void ota_task(void *pvParameter)
             vTaskDelete(NULL);
         }
 
-        vTaskDelay(30000 / portTICK_PERIOD_MS);
+        vTaskDelay(10000 / portTICK_PERIOD_MS);
     }
 }
 

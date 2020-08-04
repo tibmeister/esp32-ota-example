@@ -61,8 +61,8 @@ void app_main()
   event_group = xEventGroupCreate();
 
   app_settings_startup();
-  //  app_settings_reset();
-  //  app_settings_save();
+  // app_settings_reset();
+  // app_settings_save();
 
   app_wifi_startup();
 
