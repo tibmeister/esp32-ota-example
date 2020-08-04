@@ -119,21 +119,26 @@ void ota_task(void *pvParameter)
             goto ota_end;
         }
 
-        while (bNeedUpdate)
+        if(bNeedUpdate)
         {
-            err = esp_https_ota_perform(https_ota_handle);
-            if (err != ESP_ERR_HTTPS_OTA_IN_PROGRESS)
+            ESP_LOGI(TAG, "Firmware update available, downloading now");
+
+            while (1)
             {
-                break;
+                err = esp_https_ota_perform(https_ota_handle);
+                if (err != ESP_ERR_HTTPS_OTA_IN_PROGRESS)
+                {
+                    break;
+                }
+
+                ESP_LOGD(TAG, "Image bytes read: %d", esp_https_ota_get_image_len_read(https_ota_handle));
             }
 
-            ESP_LOGI(TAG, "Image bytes read: %d", esp_https_ota_get_image_len_read(https_ota_handle));
-        }
-
-        if (esp_https_ota_is_complete_data_received(https_ota_handle) != true  && bNeedUpdate)
-        {
-            // the OTA image was not completely received and user can customise the response to this situation.
-            ESP_LOGE(TAG, "Complete data was not received.");
+            if (esp_https_ota_is_complete_data_received(https_ota_handle) != true)
+            {
+                // the OTA image was not completely received and user can customise the response to this situation.
+                ESP_LOGE(TAG, "Complete data was not received.");
+            }
         }
 
     ota_end:
@@ -141,8 +146,8 @@ void ota_task(void *pvParameter)
 
         if ((err == ESP_OK) && (ota_finish_err == ESP_OK))
         {
-            ESP_LOGI(TAG, "OTA upgrade successful. Rebooting ...");
-            vTaskDelay(1000 / portTICK_PERIOD_MS);
+            ESP_LOGI(TAG, "OTA upgrade successful. Rebooting in 10 seconds...");
+            vTaskDelay(10000 / portTICK_PERIOD_MS);
             esp_restart();
         }
         else

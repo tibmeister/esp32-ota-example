@@ -108,6 +108,9 @@ void app_main()
     }
   }
 
+  // Pause so things can be read
+  vTaskDelay(10000 / portTICK_PERIOD_MS);
+
   EventBits_t uxBits;
 
   // xTaskCreate(&heap_debug_task,"heap_debug_task",2048,NULL,5,NULL);
