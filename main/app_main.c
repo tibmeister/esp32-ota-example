@@ -99,7 +99,7 @@ void app_main()
 
   esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
 
-  ESP_LOGD(TAG,"OTA State is: %d", ota_state);
+  ESP_LOGD(TAG,"OTA State is: %s", esp_err_to_name(ota_state));
 
   if (esp_ota_get_state_partition(running, &ota_state) == ESP_OK)
   {
