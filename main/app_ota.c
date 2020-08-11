@@ -61,7 +61,7 @@ void ota_task(void *pvParameter)
 
     while (1)
     {
-        ESP_LOGI(TAG, "Starting OTA update");
+        ESP_LOGI(TAG, "Checking for OTA update");
 
         esp_err_t ota_finish_err = ESP_OK;
 
