@@ -99,6 +99,8 @@ void app_main()
 
   esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
 
+  ESP_LOGD(TAG,"OTA State is: %s", ota_state);
+
   if (esp_ota_get_state_partition(running, &ota_state) == ESP_OK)
   {
     if(ota_state == ESP_OTA_IMG_PENDING_VERIFY)
