@@ -48,6 +48,8 @@ static esp_err_t validate_image_header(esp_app_desc_t *new_app_info)
     }
 #endif
 
+    ESP_LOGI(TAG, "Available firmware version: %s", new_app_info->version);
+
     bNeedUpdate = true;
     return ESP_OK;
 }
@@ -102,7 +104,8 @@ void ota_task(void *pvParameter)
         if (err != ESP_OK)
         {
             ESP_LOGE(TAG, "ESP HTTPS OTA Begin failed");
-            vTaskDelete(NULL);
+            // TODO: evaluate if we still need this
+            //vTaskDelete(NULL);
         }
 
         esp_app_desc_t app_desc;
