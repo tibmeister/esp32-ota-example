@@ -99,19 +99,21 @@ void app_main()
 
   esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
 
-  ESP_LOGD(TAG,"OTA State is: %s", esp_err_to_name(ota_state));
-
   if (esp_ota_get_state_partition(running, &ota_state) == ESP_OK)
   {
     if(ota_state == ESP_OTA_IMG_PENDING_VERIFY)
     {
         ESP_LOGI(TAG, "Update was successful, switching to run this going forward");
         esp_err_t errRb = esp_ota_mark_app_valid_cancel_rollback();
+        ESP_LOGE(TAG,"Return Code: %s", esp_err_to_name(errRb));
     }
     else
     {
+        ESP_LOGE(TAG, "OTA State is %s", esp_err_to_name(ota_state));
         ESP_LOGE(TAG, "Update was not sucessful, rolling back the firmware and rebooting");
         esp_err_t errRb = esp_ota_mark_app_invalid_rollback_and_reboot();
+        ESP_LOGE(TAG,"Return Code: %s", esp_err_to_name(errRb));
+        vTaskDelay(10000 / portTICK_PERIOD_MS);
     }
   }
 
