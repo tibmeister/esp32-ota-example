@@ -36,3 +36,17 @@ script:
   - cd $TRAVIS_BUILD_DIR
   - mv defsdkconfig sdkconfig
   - make app
+
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "Jody L. Whitlock"
+  - git config --local user.email "jody.whitlock@nunya.com"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file: $TRAVIS_BUILD_DIR/build/esp32-ota-example.bin
+  skip_cleanup: true
+  draft: true
