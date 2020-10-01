@@ -52,7 +52,7 @@ deploy:
     overwrite: true
     prerelease: true
     on:
-      condition: $TRAVIS_BRANCH != master) AND ($TRAVIS_TAG =~ ^(\d+\.)?(\d+\.)?(\*|\d+)$
+      condition: $TRAVIS_BRANCH != master AND $TRAVIS_TAG =~ ^(\d+\.)?(\d+\.)?(\*|\d+)$
       all_branches: true
   - provider: releases
     token: $GITHUB_API_KEY
