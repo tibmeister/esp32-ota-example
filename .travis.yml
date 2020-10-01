@@ -43,5 +43,6 @@ deploy:
   file: $TRAVIS_BUILD_DIR/build/esp32-ota-example.bin
   skip_cleanup: true
   overwrite: true
+  prerelease: true
   on:
     tags: true
