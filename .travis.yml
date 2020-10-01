@@ -34,4 +34,5 @@ install:
 
 script:
   - cd $TRAVIS_BUILD_DIR
+  - mv defsdkconfig sdkconfig
   - make app
