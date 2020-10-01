@@ -52,5 +52,5 @@ deploy:
   overwrite: true
   prerelease: true
   on:
-    condition: NOT $TRAVIS_BRANCH = master
+    condition: $TRAVIS_BRANCH != master
     all_branches: true
