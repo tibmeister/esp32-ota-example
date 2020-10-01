@@ -45,12 +45,21 @@ before_deploy:
   - git tag $TRAVIS_TAG
 
 deploy:
-  provider: releases
-  token: $GITHUB_API_KEY
-  file: $TRAVIS_BUILD_DIR/build/esp32-ota-example.bin
-  cleanup: true
-  overwrite: true
-  prerelease: true
-  on:
-    condition: $TRAVIS_BRANCH != master
-    all_branches: true
+  - provider: releases
+    token: $GITHUB_API_KEY
+    file: $TRAVIS_BUILD_DIR/build/esp32-ota-example.bin
+    cleanup: true
+    overwrite: true
+    prerelease: true
+    on:
+      condition: $TRAVIS_BRANCH != master
+      all_branches: true
+  - provider: releases
+    token: $GITHUB_API_KEY
+    file: $TRAVIS_BUILD_DIR/build/esp32-ota-example.bin
+    cleanup: true
+    overwrite: true
+    prerelease: true
+    on:
+      condition: $TRAVIS_BRANCH = master
+      all_branches: true
