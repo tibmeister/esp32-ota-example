@@ -46,9 +46,9 @@ before_deploy:
 
 deploy:
   provider: releases
-  api_key: $GITHUB_API_KEY
+  token: $GITHUB_API_KEY
   file: $TRAVIS_BUILD_DIR/build/esp32-ota-example.bin
-  skip_cleanup: true
+  cleanup: true
   overwrite: true
   prerelease: true
   on:
